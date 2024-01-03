@@ -1,0 +1,15 @@
+.content {
+	display: flex;
+	flex-direction: column;
+	background-color: #F8F8F8;
+	padding: 60px 3%;
+	gap: 50px;
+}
+
+.category-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 25px;
+}

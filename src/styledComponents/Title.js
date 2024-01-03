@@ -5,6 +5,7 @@ const Title = styled.h2`
 	font-weight: 700;
 	font-size: 32px;
 	line-height: 48px;
+	text-align: center;
 `
 
 export default Title

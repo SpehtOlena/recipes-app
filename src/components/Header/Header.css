@@ -4,5 +4,7 @@
 	flex-wrap: wrap;
 	gap: 25px;
 	justify-content: space-between;
-	padding: 20px 5%;
+	align-items: center;
+	padding: 20px 8%;
+	min-height: 60px;
 }
