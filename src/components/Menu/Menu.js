@@ -1,16 +1,13 @@
 import './Menu.css';
 
-const MenuItems = [
-	"Home",
-	"List",
-	"Search"
-]
 
-const Menu = () => {
+
+const Menu = ({ menuItems }) => {
 	return (
 		<div className={'menu-items'}>
-			{MenuItems.map((value, index) => <a href={value} key={index}>{value}</a>)}
-		</div>
+			{menuItems.map((value, index) => <a href={`/${value}`} key={index} className={'menu-item'}>{value.toUpperCase()}</a>)
+			}
+		</div >
 	)
 }
 export default Menu

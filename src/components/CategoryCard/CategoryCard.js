@@ -6,7 +6,7 @@ const CategoryCard = ({ item }) => {
 	const { category, description, imgUrl } = item;
 	return (
 		<div className={'category-card'}>
-			<img src={imgUrl} alt="category_img" className={'category-img'} />
+			<img src={imgUrl} alt={`${category} photo`} className={'category-img'} />
 			<SubTitle>{category}</SubTitle>
 			<Text>{description}</Text>
 		</div>

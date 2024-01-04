@@ -9,7 +9,7 @@
 }
 
 
-.banner-context {
+.banner-content {
 	width: 40%;
 	display: flex;
 	flex-direction: column;
@@ -19,7 +19,7 @@
 
 .banner-img {
 	display: block;
-	width: 60%;
+	width: 50%;
 }
 
 .banner-img img {
@@ -35,7 +35,7 @@
 		gap: 40px;
 	}
 
-	.banner-context {
+	.banner-content {
 		width: 100%;
 		align-items: center;
 		text-align: center;
