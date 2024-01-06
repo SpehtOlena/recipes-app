@@ -1,0 +1,75 @@
+.detail-card-wrapper {
+	background: #F8F8F8;
+}
+
+.detail-card-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 20px 5%;
+	gap: 25px;
+}
+
+.detail-main {
+	display: flex;
+	flex-direction: column;
+	width: 35%;
+	height: 60%;
+	gap: 20px;
+	box-shadow: 0px 4px 4px 0px #00000040;
+	background: #fff;
+}
+
+.detail-main-info {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 20px 30px 50px 30px;
+}
+
+.dish-photo img {
+	width: 100%;
+}
+
+.detail-cooking {
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+	background: #fff;
+	padding: 2%;
+	box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.detail-cooking-ingredients {
+	display: flex;
+	flex-direction: column;
+	font-family: Quando;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 25px;
+	letter-spacing: 0em;
+	text-align: left;
+	gap: 21px;
+}
+
+.detail-cooking-ingredients div {
+	display: flex;
+	justify-content: space-between;
+	background: #FBFBFB;
+	padding: 1% 3% 1% 8%;
+}
+
+.detail-cooking-plan {
+	display: flex;
+	flex-direction: column;
+	background: #FFC759;
+	margin: 5% 0;
+	padding: 5%;
+	gap: 15px;
+}
+
+.detail-cooking button {
+	display: inline-block;
+	width: 30%;
+	align-self: end;
+}

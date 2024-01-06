@@ -23,4 +23,5 @@ export const TextL = styled(Text)`
 	font-weight: 400;
 	font-size: 24px;
 	line-height: 30px;
+	color: #000;
 `

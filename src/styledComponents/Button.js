@@ -12,7 +12,7 @@ const Button = styled.button`
 	cursor: pointer;
 
 &:hover {
-	background: ${props => props.primary ? "#b4328d99" : "#e65c0c"};
+	background: ${props => props.primary ? "#f56830" : "#e65c0c"};
 }
 
 	.list-card & {
