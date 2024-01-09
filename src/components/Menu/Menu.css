@@ -1,9 +1,0 @@
-.menu-items {
-	display: flex;
-	flex-direction: row;
-	gap: 15px;
-}
-
-.menu-item:hover {
-	color: #ee420d;
-}
