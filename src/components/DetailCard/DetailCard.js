@@ -1,6 +1,5 @@
 import './DetailCard.css';
 import { Text, TextL } from '../../styledComponents/Text';
-import Button from '../../styledComponents/Button';
 
 const DetailCard = ({ item }) => {
 	const { photoUrl, name, category, description, allIngredients, cooking } = item;
@@ -8,11 +7,11 @@ const DetailCard = ({ item }) => {
 		<div className={'detail-card-wrapper'}>
 			<div className={'detail-card-container'}>
 				<div className={'detail-main'}>
-					<img src={photoUrl} alt={`${name}`} className={'dish-photo'} />
+					<img src={photoUrl} alt={`${name}`} className={'detail-dish-photo'} />
 					<div className={'detail-main-info'}>
 						<TextL>{name}</TextL>
-						<Text><span>Categore : </span>{category}</Text>
-						<Text><span>Description : </span>{description}</Text>
+						<Text className={'hidden-info'}><span>Category : </span>{category}</Text>
+						<Text className={'hidden-info'}><span>Description : </span>{description}</Text>
 					</div>
 				</div>
 				<div className={'detail-cooking'}>
@@ -26,7 +25,6 @@ const DetailCard = ({ item }) => {
 							cooking.map((item, index) => <TextL value={item} key={index}>{item}</TextL>)
 						}
 					</div>
-					<Button primary={'true'}>Back</Button>
 				</div>
 			</div>
 		</div>

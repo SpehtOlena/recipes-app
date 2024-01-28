@@ -19,3 +19,14 @@
 .menu-item:hover {
 	color: #ee420d;
 }
+
+@media (max-width: 480px) {
+	.header {
+		flex-direction: column;
+		gap: 35px;
+		justify-content: center;
+		align-items: center;
+		padding: 20px 8%;
+		min-height: 60px;
+	}
+}

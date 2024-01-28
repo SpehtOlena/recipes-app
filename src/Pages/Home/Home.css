@@ -1,5 +1,4 @@
 .content {
-
 	display: flex;
 	flex-direction: column;
 	background-color: #F8F8F8;
@@ -8,7 +7,6 @@
 }
 
 .category-container {
-
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -17,7 +15,6 @@
 }
 
 .category-container-item {
-
 	display: flex;
 	flex-direction: column;
 	width: 23%;
@@ -52,4 +49,33 @@
 	display: inline-block;
 	width: 15%;
 	align-self: end;
+	margin-right: 8px;
+}
+
+@media (max-width: 1024px) {
+	.category-container {
+		gap: 35px 10px;
+	}
+
+	.category-container-item {
+		width: 48%;
+	}
+}
+
+@media (max-width: 768px) {
+	.content {
+		padding: 30px 3%;
+		gap: 20px;
+	}
+
+	.buttonBack {
+		width: 25%;
+		margin-right: 0;
+	}
+}
+
+@media (max-width: 480px) {
+	.category-container-item {
+		width: 100%;
+	}
 }

@@ -1,6 +1,5 @@
 import './App.css';
 import Header from './components/Header/Header';
-import DishRecipe from './Pages/DishRecipe/DishRecipe.js';
 import Home from './Pages/Home/Home.js';
 import List from './Pages/List/List.js';
 import Search from './Pages/Search/Search.js';
@@ -19,12 +18,7 @@ const menuItems = [
 	{
 		label: "Search",
 		element: <Search />
-	},
-	{
-		label: "DishRecipe",
-		element: <DishRecipe />
 	}
-
 ]
 
 function App() {

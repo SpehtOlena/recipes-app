@@ -35,7 +35,6 @@ export const recipes = [
 const Home = () => {
 	const [filterData, setFilterData] = useState('')
 	const filteredData = RecipesArray.filter((value => value.category === filterData))
-	console.log(filteredData);
 	return (
 		<div>
 			{
@@ -61,7 +60,7 @@ const Home = () => {
 					<div className={'list-wrapper'}>
 						<ul className={'list_container'}>
 							{
-								filteredData.map(value => <ListCard object={value} />)
+								filteredData.map(value => <ListCard object={value} key={value.id} />)
 							}
 						</ul>
 						<Button onClick={() => { setFilterData(null) }} className={'buttonBack'}>Back</Button>
