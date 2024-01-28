@@ -2,6 +2,10 @@ import './Home.css';
 import Banner from '../../components/Banner/Banner.js'
 import Title from '../../styledComponents/Title.js';
 import CategoryCard from '../../components/CategoryCard/CategoryCard.js';
+import { useState } from 'react';
+import RecipesArray from '../../components/RecipesArr.js';
+import ListCard from '../../components/ListCard/ListCard.js';
+import Button from '../../styledComponents/Button.js';
 
 
 export const recipes = [
@@ -29,17 +33,41 @@ export const recipes = [
 
 
 const Home = () => {
+	const [filterData, setFilterData] = useState('')
+	const filteredData = RecipesArray.filter((value => value.category === filterData))
+	console.log(filteredData);
 	return (
 		<div>
-			<Banner />
-			<div className={'content'}>
-				<Title>Recipes</Title>
-				<div className={'category-container'}>
-					{
-						recipes.map((value, index) => <CategoryCard item={value} key={index} />)
-					}
-				</div>
-			</div>
+			{
+				filteredData.length === 0 ?
+					<div>
+						<Banner />
+						<div className={'content'}>
+							<Title>Recipes</Title>
+							<div className={'category-container'}>
+								{
+									recipes.map((value, index) =>
+										<div key={index} className={'category-container-item'}>
+											<CategoryCard item={value} />
+											<Button onClick={() => { setFilterData(value.category) }}> {value.category}</Button>
+										</div>
+									)
+								}
+							</div>
+
+
+						</div>
+					</div> :
+					<div className={'list-wrapper'}>
+						<ul className={'list_container'}>
+							{
+								filteredData.map(value => <ListCard object={value} />)
+							}
+						</ul>
+						<Button onClick={() => { setFilterData(null) }} className={'buttonBack'}>Back</Button>
+					</div>
+			}
+
 		</div>
 	)
 }
