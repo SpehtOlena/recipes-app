@@ -1,0 +1,12 @@
+.search-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 35px;
+	background-color: #F8F8F8;
+	padding: 60px 10%;
+}
+
+:where(.css-dev-only-do-not-override-1b0bdye).ant-result-info .ant-result-icon>.anticon {
+	color: #F8A607;
+}

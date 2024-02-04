@@ -1,0 +1,35 @@
+.form-container {
+	height: 70vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 35px;
+	background-color: #F8F8F8;
+	padding: 60px 10%;
+}
+
+:where(.css-dev-only-do-not-override-1b0bdye).ant-input-outlined:hover,
+:where(.css-dev-only-do-not-override-1b0bdye).ant-input-outlined:focus {
+	border-color: #F8A607;
+}
+
+:where(.css-dev-only-do-not-override-1b0bdye).ant-select-outlined:not(.ant-select-customize-input):hover,
+:where(.css-dev-only-do-not-override-1b0bdye).ant-select-outlined:not(.ant-select-customize-input):focus,
+.ant-select-selector:hover,
+.ant-select-selector:focus {
+	border-color: #F8A607;
+}
+
+:where(.css-dev-only-do-not-override-1b0bdye).ant-select-outlined:not(.ant-select-disabled):not(.ant-select-customize-input):not(.ant-pagination-size-changer):hover .ant-select-selector {
+	border-color: #F8A607;
+}
+
+
+.ant-select-focused:where(.css-dev-only-do-not-override-1b0bdye).ant-select-outlined:not(.ant-select-disabled):not(.ant-select-customize-input):not(.ant-pagination-size-changer) .ant-select-selector {
+	border-color: #F8A607;
+}
+
+:where(.css-dev-only-do-not-override-1b0bdye).ant-btn-dashed:not(:disabled):not(.ant-btn-disabled):hover {
+	color: #F8A607;
+	border-color: #F8A607;
+}

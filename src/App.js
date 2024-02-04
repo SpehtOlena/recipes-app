@@ -21,12 +21,12 @@ function App() {
 			element: <List data={data} setData={setData} />
 		},
 		{
-			label: "Search",
-			element: <Search setActivePage={setActivePage} />
+			label: "New",
+			element: <NewRecipe data={data} setData={setData} setActivePage={setActivePage} />
 		},
 		{
-			label: "New",
-			element: <NewRecipe data={data} setData={setData} />
+			label: "",
+			element: <Search setActivePage={setActivePage} />
 		}
 	]
 	return (
