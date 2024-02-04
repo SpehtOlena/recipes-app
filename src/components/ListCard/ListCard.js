@@ -17,7 +17,7 @@ const ListCard = ({ object }) => {
 				<h3 className='dishName'>{recipeName}</h3>
 				<div className={'dish-ingredients'}>
 					{
-						ingredients.map((value, index) => <li value={value} key={index}>{value}</li>)
+						ingredients.slice(0, 3).map((value, index) => <li value={value} key={index}>{value}</li>)
 					}
 				</div>
 				<Button onClick={() => { setActiveRecipe(object.id); setModalOpen(true) }}>Show details</Button>
