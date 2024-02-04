@@ -2,14 +2,14 @@ import './DetailCard.css';
 import { Text, TextL } from '../../styledComponents/Text';
 
 const DetailCard = ({ item }) => {
-	const { photoUrl, name, category, description, allIngredients, cooking } = item;
+	const { photoUrl, recipeName, category, description, allIngredients, cooking } = item;
 	return (
 		<div className={'detail-card-wrapper'}>
 			<div className={'detail-card-container'}>
 				<div className={'detail-main'}>
-					<img src={photoUrl} alt={`${name}`} className={'detail-dish-photo'} />
+					<img src={photoUrl} alt={`${recipeName}`} className={'detail-dish-photo'} />
 					<div className={'detail-main-info'}>
-						<TextL>{name}</TextL>
+						<TextL>{recipeName}</TextL>
 						<Text className={'hidden-info'}><span>Category : </span>{category}</Text>
 						<Text className={'hidden-info'}><span>Description : </span>{description}</Text>
 					</div>

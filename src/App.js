@@ -2,6 +2,7 @@ import './App.css';
 import Header from './components/Header/Header';
 import Home from './Pages/Home/Home.js';
 import List from './Pages/List/List.js';
+import NewRecipe from './Pages/NewRecipe/NewRecipe.js';
 import Search from './Pages/Search/Search.js';
 import { useState } from 'react';
 
@@ -18,6 +19,10 @@ const menuItems = [
 	{
 		label: "Search",
 		element: <Search />
+	},
+	{
+		label: "New",
+		element: <NewRecipe />
 	}
 ]
 

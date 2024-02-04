@@ -2,7 +2,7 @@ const RecipesArray = [
 	{
 		id: 1,
 		category: "Супи",
-		name: "Борщ",
+		recipeName: "Борщ",
 		ingredients: ["буряк", "картопля", "морква"],
 		photoUrl: "https://picsum.photos/id/256/300/200",
 		allIngredients: ["буряк", "картопля", "морква", "капуста", "цибуля", "м'ясо (зазвичай свинина або яловичина)"],
@@ -12,7 +12,7 @@ const RecipesArray = [
 	{
 		id: 2,
 		category: "Основні страви",
-		name: "Паста карбонара",
+		recipeName: "Паста карбонара",
 		ingredients: ["спагетті", "бекон", "яйця"],
 		photoUrl: "https://picsum.photos/id/257/300/200",
 		allIngredients: ["спагетті", "бекон", "яйця", "пармезан", "чорний перець"],
@@ -22,7 +22,7 @@ const RecipesArray = [
 	{
 		id: 3,
 		category: "Салати",
-		name: "Салат Цезар",
+		recipeName: "Салат Цезар",
 		ingredients: ["куряче філе", "листовий салат", "грінки"],
 		photoUrl: "https://picsum.photos/id/258/300/200",
 		allIngredients: ["куряче філе", "листовий салат", "грінки", "пармезан", "соус Цезар"],
@@ -32,7 +32,7 @@ const RecipesArray = [
 	{
 		id: 4,
 		category: "Основні страви",
-		name: "Суші",
+		recipeName: "Суші",
 		ingredients: ["рис", "риба", "огірок"],
 		photoUrl: "https://picsum.photos/id/259/300/200",
 		allIngredients: ["рис", "риба (наприклад, лосось або тунець)", "огірок", "авокадо", "норі"],
@@ -42,7 +42,7 @@ const RecipesArray = [
 	{
 		id: 5,
 		category: "Основні страви",
-		name: "Стейк",
+		recipeName: "Стейк",
 		ingredients: ["м'ясо", "олія", "спеції"],
 		photoUrl: "https://picsum.photos/id/260/300/200",
 		allIngredients: ["м'ясо (зазвичай яловичина або свинина)", "олія", "спеції"],
@@ -52,7 +52,7 @@ const RecipesArray = [
 	{
 		id: 6,
 		category: "Основні страви",
-		name: "Пельмені",
+		recipeName: "Пельмені",
 		ingredients: ["м'ясний фарш", "тісто", "спеції"],
 		photoUrl: "https://picsum.photos/id/261/300/200",
 		allIngredients: ["м'ясний фарш (зазвичай яловичина або свинина)", "тісто"],
@@ -62,7 +62,7 @@ const RecipesArray = [
 	{
 		id: 7,
 		category: "Салати",
-		name: "Грецький салат",
+		recipeName: "Грецький салат",
 		ingredients: ["помідори", "огірки", "оливки"],
 		photoUrl: "https://picsum.photos/id/263/300/200",
 		allIngredients: ["помідори", "огірки", "оливки", "болгарський перець", "сир Фета", "оливкова олія"],
@@ -72,7 +72,7 @@ const RecipesArray = [
 	{
 		id: 8,
 		category: "Основні страви",
-		name: "Лазанья",
+		recipeName: "Лазанья",
 		ingredients: ["м'ясний соус", "білий соус", "сир моцарелла"],
 		photoUrl: "https://picsum.photos/id/248/300/200",
 		allIngredients: ["м'ясний соус (зазвичай з яловичини)", "білий соус", "лазанья (тісто)", "сир моцарелла"],
@@ -82,7 +82,7 @@ const RecipesArray = [
 	{
 		id: 9,
 		category: "Основні страви",
-		name: "Голубці",
+		recipeName: "Голубці",
 		ingredients: ["м'ясний фарш", "капуста", "рис"],
 		photoUrl: "https://picsum.photos/id/201/300/200",
 		allIngredients: ["м'ясний соус (зазвичай з яловичини)", "білий соус", "лазанья (тісто)", "сир моцарелла"],
@@ -92,7 +92,7 @@ const RecipesArray = [
 	{
 		id: 10,
 		category: "Основні страви",
-		name: "Чізбургер",
+		recipeName: "Чізбургер",
 		ingredients: ["м'ясний фарш", "булка", "кетчуп"],
 		photoUrl: "https://picsum.photos/id/213/300/200",
 		allIngredients: ["м'ясний соус (зазвичай з яловичини)", "білий соус", "лазанья (тісто)", "сир моцарелла"],
@@ -102,7 +102,7 @@ const RecipesArray = [
 	{
 		id: 11,
 		category: "Основні страви",
-		name: "Біф Велінгтон",
+		recipeName: "Біф Велінгтон",
 		ingredients: ["Телятина", "печериці", "тісто"],
 		photoUrl: "https://picsum.photos/id/208/300/200",
 		allIngredients: ["м'ясний соус (зазвичай з яловичини)", "білий соус", "лазанья (тісто)", "сир моцарелла"],
@@ -112,7 +112,7 @@ const RecipesArray = [
 	{
 		id: 12,
 		category: "Десерти",
-		name: "Еклери",
+		recipeName: "Еклери",
 		ingredients: ["тісто", "вершки", "цукор"],
 		photoUrl: "https://picsum.photos/id/244/300/200",
 		allIngredients: ["тісто", "вершки", "цукор", "шоколад", "іриски", "ваніль"],
@@ -121,7 +121,7 @@ const RecipesArray = [
 	},
 	{
 		id: 13,
-		name: "Паелья",
+		recipeName: "Паелья",
 		category: "Супи",
 		ingredients: ["рис", "мідії", "томати"],
 		photoUrl: "https://picsum.photos/id/228/300/200",
@@ -132,7 +132,7 @@ const RecipesArray = [
 	{
 		id: 14,
 		category: "Супи",
-		name: "Бограч",
+		recipeName: "Бограч",
 		ingredients: ["м'ясо", "перець", "томати"],
 		photoUrl: "https://picsum.photos/id/221/300/200",
 		allIngredients: ["м'ясний соус (зазвичай з яловичини)", "білий соус", "лазанья (тісто)", "сир моцарелла"],
@@ -142,7 +142,7 @@ const RecipesArray = [
 	{
 		id: 15,
 		category: "Салати",
-		name: "Капрезе",
+		recipeName: "Капрезе",
 		ingredients: ["томати", "базилік", "сир моцарелла"],
 		photoUrl: "https://picsum.photos/id/217/300/200",
 		allIngredients: ["м'ясний соус (зазвичай з яловичини)", "білий соус", "лазанья (тісто)", "сир моцарелла"],
@@ -152,7 +152,7 @@ const RecipesArray = [
 	{
 		id: 16,
 		category: "Десерти",
-		name: "Капкейки",
+		recipeName: "Капкейки",
 		ingredients: ["борошно", "масло", "вершки"],
 		photoUrl: "https://picsum.photos/id/218/300/200",
 		allIngredients: ["м'ясний соус (зазвичай з яловичини)", "білий соус", "лазанья (тісто)", "сир моцарелла"],
@@ -162,7 +162,7 @@ const RecipesArray = [
 	{
 		id: 17,
 		category: "Десерти",
-		name: "Тірамісу",
+		recipeName: "Тірамісу",
 		ingredients: ["маскарпоне", "кава", "савоярді"],
 		photoUrl: "https://picsum.photos/id/268/300/200",
 		allIngredients: ["маскарпоне", "кавас", "савоярді", "яйця"],
@@ -172,7 +172,7 @@ const RecipesArray = [
 	{
 		id: 18,
 		category: "Десерти",
-		name: "Чурос",
+		recipeName: "Чурос",
 		ingredients: ["тісто", "цукор"],
 		photoUrl: "https://picsum.photos/id/241/300/200",
 		allIngredients: ["тісто", "цукор", "кориця"],
@@ -182,7 +182,7 @@ const RecipesArray = [
 	{
 		id: 19,
 		category: "Десерти",
-		name: "Джелато",
+		recipeName: "Джелато",
 		ingredients: ["молоко", "цукор"],
 		photoUrl: "https://picsum.photos/id/219/300/200",
 		allIngredients: ["молоко", "цукор", "яйця"],
@@ -192,7 +192,7 @@ const RecipesArray = [
 	{
 		id: 20,
 		category: "Супи",
-		name: "Харчо",
+		recipeName: "Харчо",
 		ingredients: ["рис", "м'ясо", "солодка паприка"],
 		photoUrl: "https://picsum.photos/id/243/300/200",
 		allIngredients: ["рис", "м'ясо", "солодка паприка", "цибуля", "томатна паста", "бульйон"],
@@ -202,7 +202,7 @@ const RecipesArray = [
 	{
 		id: 21,
 		category: "Супи",
-		name: "Суп з фрикадельками",
+		recipeName: "Суп з фрикадельками",
 		ingredients: ["фарш", "бульйон", "морква"],
 		photoUrl: "https://picsum.photos/id/215/300/200",
 		allIngredients: ["фарш", "бульйон", "морква", "цільна пшениця", "яйця", "петрушка"],
@@ -212,7 +212,7 @@ const RecipesArray = [
 	{
 		id: 22,
 		category: "Десерти",
-		name: "Брауні",
+		recipeName: "Брауні",
 		ingredients: ["шоколад", "цукор", "вершки"],
 		photoUrl: "https://picsum.photos/id/212/300/200",
 		allIngredients: ["шоколад", "цукор", "вершки", "яйця", "борошно", "горіхи"],
@@ -222,7 +222,7 @@ const RecipesArray = [
 	{
 		id: 23,
 		category: "Десерти",
-		name: "Наполеон",
+		recipeName: "Наполеон",
 		ingredients: ["борошно", "цукор", "масло"],
 		photoUrl: "https://picsum.photos/id/212/300/200",
 		allIngredients: ["молоко", "цукор", "вершки", "яйця", "борошно"],
@@ -232,7 +232,7 @@ const RecipesArray = [
 	{
 		id: 24,
 		category: "Салати",
-		name: "Медовий горішок",
+		recipeName: "Медовий горішок",
 		ingredients: ["горішки", "мед", "листя салату"],
 		photoUrl: "https://picsum.photos/id/242/300/200",
 		allIngredients: ["горішки", "мед", "листя салату", "сир фета", "гірчиця"],

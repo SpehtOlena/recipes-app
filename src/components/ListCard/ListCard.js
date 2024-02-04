@@ -9,12 +9,12 @@ const ListCard = ({ object }) => {
 	const [modalOpen, setModalOpen] = useState(false);
 	const [activeRecipe, setActiveRecipe] = useState('');
 	const filteredRecipe = RecipesArray.filter((value => value.id === activeRecipe))
-	const { photoUrl, ingredients, name } = object;
+	const { photoUrl, ingredients, recipeName } = object;
 	return (
 		<>
 			<div className={'list-card'}>
-				<img src={photoUrl} alt={`${name} photo`} className={'dish-photo'} />
-				<h3 className='dishName'>{name}</h3>
+				<img src={photoUrl} alt={`${recipeName} photo`} className={'dish-photo'} />
+				<h3 className='dishName'>{recipeName}</h3>
 				<div className={'dish-ingredients'}>
 					{
 						ingredients.map((value, index) => <li value={value} key={index}>{value}</li>)
