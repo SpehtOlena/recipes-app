@@ -7,27 +7,28 @@ import Search from './Pages/Search/Search.js';
 import { useState } from 'react';
 
 
-const menuItems = [
-	{
-		label: "Home",
-		element: <Home />
-	},
-	{
-		label: "List",
-		element: <List />
-	},
-	{
-		label: "Search",
-		element: <Search />
-	},
-	{
-		label: "New",
-		element: <NewRecipe />
-	}
-]
 
 function App() {
 	const [activePage, setActivePage] = useState(<Home />);
+	const [data, setData] = useState([]);
+	const menuItems = [
+		{
+			label: "Home",
+			element: <Home data={data} setData={setData} />
+		},
+		{
+			label: "List",
+			element: <List data={data} setData={setData} />
+		},
+		{
+			label: "Search",
+			element: <Search setActivePage={setActivePage} />
+		},
+		{
+			label: "New",
+			element: <NewRecipe data={data} setData={setData} />
+		}
+	]
 	return (
 		<div className="App">
 			<Header items={menuItems} setActivePage={setActivePage} activePage={activePage} />
