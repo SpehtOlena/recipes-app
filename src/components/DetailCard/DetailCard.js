@@ -2,7 +2,7 @@ import './DetailCard.css';
 import { Text, TextL } from '../../styledComponents/Text';
 
 const DetailCard = ({ item }) => {
-	const { photoUrl, recipeName, category, description, allIngredients, cooking } = item;
+	const { photoUrl, recipeName, category, description, ingredients, cooking } = item;
 	return (
 		<div className={'detail-card-wrapper'}>
 			<div className={'detail-card-container'}>
@@ -17,13 +17,15 @@ const DetailCard = ({ item }) => {
 				<div className={'detail-cooking'}>
 					<div className={'detail-cooking-ingredients'}>
 						{
-							allIngredients.map((value, index) => <div value={value} key={index}>{value}<input type='checkbox' className={'checkbox-modal'}></input></div>)
+							ingredients.map((value, index) => <div value={value} key={index}>{value}<input type='checkbox' className={'checkbox-modal'}></input></div>)
 						}
 					</div>
 					<div className={'detail-cooking-plan'}>
-						{
-							cooking.map((item, index) => <TextL value={item} key={index}>{item}</TextL>)
-						}
+						<ol>
+							{
+								cooking.map((item, index) => <li value={item} key={index}>{item}</li>)
+							}
+						</ol>
 					</div>
 				</div>
 			</div>

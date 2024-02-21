@@ -5,10 +5,10 @@ import RecipesArray from '../RecipesArr';
 import DetailCard from '../DetailCard/DetailCard'
 import './ListCard.css';
 
-const ListCard = ({ object }) => {
+const ListCard = ({ object, recipes }) => {
 	const [modalOpen, setModalOpen] = useState(false);
 	const [activeRecipe, setActiveRecipe] = useState('');
-	const filteredRecipe = RecipesArray.filter((value => value.id === activeRecipe))
+	const filteredRecipe = recipes.filter((value => value.id === activeRecipe))
 	const { photoUrl, ingredients, recipeName } = object;
 	return (
 		<>

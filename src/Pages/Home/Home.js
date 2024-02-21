@@ -8,7 +8,7 @@ import ListCard from '../../components/ListCard/ListCard.js';
 import Button from '../../styledComponents/Button.js';
 
 
-export const recipes = [
+export const recipesCategory = [
 	{
 		category: "Супи",
 		description: "Смачні і ситні страви на основі бульйону або закваски.",
@@ -32,39 +32,41 @@ export const recipes = [
 ];
 
 
-const Home = () => {
+const Home = (recipes, setRecipes) => {
+	console.log(recipes);
 	const [filterData, setFilterData] = useState('')
-	const filteredData = RecipesArray.filter((value => value.category === filterData))
+	// const filteredData = recipes.data.filter((value => value.category === filterData))
 	return (
 		<div>
 			{
-				filteredData.length === 0 ?
-					<div>
-						<Banner />
-						<div className={'content'}>
-							<Title>Recipes</Title>
-							<div className={'category-container'}>
-								{
-									recipes.map((value, index) =>
-										<div key={index} className={'category-container-item'}>
-											<CategoryCard item={value} />
-											<Button onClick={() => { setFilterData(value.category) }}> {value.category}</Button>
-										</div>
-									)
-								}
-							</div>
-
-
-						</div>
-					</div> :
-					<div className={'list-wrapper'}>
-						<ul className={'list_container'}>
+				// filteredData.length === 0 ?
+				<div>
+					<Banner />
+					<div className={'content'}>
+						<Title>Recipes</Title>
+						<div className={'category-container'}>
 							{
-								filteredData.map(value => <ListCard object={value} key={value.id} />)
+								recipesCategory.map((value, index) =>
+									<div key={index} className={'category-container-item'}>
+										<CategoryCard item={value} recipes={recipes} />
+										<Button onClick={() => { setFilterData(value.category) }}> {value.category}</Button>
+									</div>
+								)
 							}
-						</ul>
-						<Button onClick={() => { setFilterData(null) }} className={'buttonBack'}>Back</Button>
+						</div>
+
+
 					</div>
+				</div>
+				//  :
+				// <div className={'list-wrapper'}>
+				// 	<ul className={'list_container'}>
+				// 		{
+				// 			filteredData.map(value => <ListCard object={value} key={value.id} recipes={recipes} />)
+				// 		}
+				// 	</ul>
+				// 	<Button onClick={() => { setFilterData(null) }} className={'buttonBack'}>Back</Button>
+				// </div>
 			}
 
 		</div>
