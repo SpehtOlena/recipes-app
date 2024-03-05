@@ -33,3 +33,7 @@
 	color: #F8A607;
 	border-color: #F8A607;
 }
+
+:where(.css-dev-only-do-not-override-1b0bdye).ant-space-gap-col-small {
+	width: 100%;
+}

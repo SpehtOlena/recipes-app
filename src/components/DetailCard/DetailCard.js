@@ -1,8 +1,8 @@
 import './DetailCard.css';
 import { Text, TextL } from '../../styledComponents/Text';
 
-const DetailCard = ({ item }) => {
-	const { photoUrl, recipeName, category, description, ingredients, cooking } = item;
+const DetailCard = ({ activeRecipe }) => {
+	const { photoUrl, recipeName, category, description, ingredients, cooking } = activeRecipe;
 	return (
 		<div className={'detail-card-wrapper'}>
 			<div className={'detail-card-container'}>

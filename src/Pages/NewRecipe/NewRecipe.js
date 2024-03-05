@@ -2,17 +2,19 @@ import { Button, Form, Input, Select, Space } from 'antd';
 import { MinusCircleOutlined, PlusOutlined } from '@ant-design/icons';
 import './NewRecipe.css';
 import FormItem from 'antd/es/form/FormItem';
-import Search from '../Search/Search';
 import ButtonRadius from '../../styledComponents/ButtonRadius';
-import axios from 'axios';
+import { useDispatch } from 'react-redux';
+import { axiosRequest } from '../../redux/action';
+import List from '../List/List';
 
-const NewRecipe = ({ recipes, setRecipes }) => {
-	const onFinish = (values) => {
-		axios
-			.post('http://localhost:3000/recipes', values)
-			.then(res => setRecipes([...recipes, res.data]))
-	};
+const NewRecipe = ({ setActivePage }) => {
+	const dispatch = useDispatch();
 	const [form] = Form.useForm();
+	const onFinish = (values) => {
+		dispatch(axiosRequest(values, 'post'))
+			.then(() => { setActivePage(<List />) })
+
+	};
 	return (
 		<div className={'form-container'}>
 			<Form name={"NewRecipe"} onFinish={onFinish} form={form}>
@@ -69,13 +71,13 @@ const NewRecipe = ({ recipes, setRecipes }) => {
 								</Button>
 							</Form.Item>
 							{fields.map(({ key, name, ...restField }) => (
-								<Space key={key} style={{ display: 'flex', marginBottom: 8 }} align="baseline">
+								<Space key={key} style={{ display: 'flex', marginBottom: 8, justifyContent: "space-between" }} align="baseline">
 									<Form.Item
 										{...restField}
 										name={[name]}
 										rules={[{ required: true, message: 'Вкажіть основні інгредієнти' }]}
 									>
-										<Input placeholder="Інгридієнт" />
+										<Input placeholder="Інгридієнт" style={{ width: "76vw" }} />
 									</Form.Item>
 									<MinusCircleOutlined onClick={() => remove(name)} />
 								</Space>
@@ -98,13 +100,13 @@ const NewRecipe = ({ recipes, setRecipes }) => {
 								</Button>
 							</Form.Item>
 							{fields.map(({ key, name, ...restField }) => (
-								<Space key={key} style={{ display: 'flex', marginBottom: 8 }} align="baseline">
+								<Space key={key} style={{ display: 'flex', marginBottom: 8, justifyContent: "space-between" }} align="baseline">
 									<Form.Item
 										{...restField}
 										name={[name]}
 										rules={[{ required: true, message: 'Вкажіть план приготування страви' }]}
 									>
-										<Input placeholder="Етап приготування" />
+										<Input placeholder="Етап приготування" style={{ width: "76vw" }} />
 									</Form.Item>
 									<MinusCircleOutlined onClick={() => remove(name)} />
 								</Space>
@@ -113,7 +115,7 @@ const NewRecipe = ({ recipes, setRecipes }) => {
 						</>
 					)}
 				</Form.List>
-				<ButtonRadius $primary htmlType="submit">Submit</ButtonRadius>
+				<ButtonRadius $primary >Submit</ButtonRadius>
 			</Form>
 		</div>
 	)

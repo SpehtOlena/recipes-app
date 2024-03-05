@@ -35,11 +35,6 @@ function App() {
 		<div className="App">
 			<Header items={menuItems} setActivePage={setActivePage} activePage={activePage} />
 			{activePage}
-			<ul>
-				<ol>j</ol>
-				<ol>j</ol>
-				<ol>j	</ol>
-			</ul>
 		</div>
 	);
 }

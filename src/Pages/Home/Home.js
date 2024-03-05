@@ -33,7 +33,7 @@ export const recipesCategory = [
 
 
 const Home = (recipes, setRecipes) => {
-	console.log(recipes);
+
 	const [filterData, setFilterData] = useState('')
 	// const filteredData = recipes.data.filter((value => value.category === filterData))
 	return (

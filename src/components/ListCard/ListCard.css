@@ -37,6 +37,8 @@
 	border: none;
 	text-decoration: none;
 	color: #fff;
+	text-align: left;
+	align-self: center;
 }
 
 @media (max-width: 1024px) {

@@ -1,0 +1,6 @@
+export const GET_DATA = "RECIPES/GET_DATA";
+export const GET_ITEM = "RECIPES/GET_ITEM";
+export const EDIT_ITEM = "RECIPES/EDIT_ITEM";
+export const CREATE_ITEM = "RECIPES/CREATE_ITEM";
+export const DELETE_ITEM = "RECIPES/DELETE_ITEM";
+

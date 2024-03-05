@@ -494,46 +494,6 @@
 				"Порізану сир фета розсипте поверхню салату.",
 				"Перемішайте та насолоджуйтеся."
 			]
-		},
-		{
-			"id": "c3f7",
-			"category": "Супи",
-			"recipeName": "Gwendolyn Kane",
-			"description": "Doloremque est eaqu",
-			"photoUrl": "https://robohash.org/Uuuneiqeee.pngset=set4",
-			"ingredients": [
-				"Alias voluptatem quo",
-				"Ducimus deserunt et"
-			],
-			"cooking": [
-				"Necessitatibus enim ",
-				"Quasi distinctio Ve"
-			]
-		},
-		{
-			"id": "deb3",
-			"category": "Десерти",
-			"recipeName": "Shea Bonner",
-			"description": "Nisi enim aliqua Pr",
-			"photoUrl": "https://robohash.org/Yooonieqe.pnset=set4",
-			"ingredients": [
-				"Officia sit nisi cul",
-				"Doloremque praesenti",
-				"Sed fuga Officiis v",
-				"Quod voluptatum ut e",
-				"Veniam eos quibusd",
-				"Quia et commodi maxi"
-			],
-			"cooking": [
-				"Ut cupiditate eum co",
-				"Ipsum tempora possim",
-				"Consequatur id neque",
-				"Elit eveniet aute ",
-				"Qui veniam culpa u",
-				"Eveniet totam quae ",
-				"Hic qui non quam rer",
-				"Est id saepe et fu"
-			]
 		}
 	]
 }
